@@ -1,15 +1,12 @@
-# Pong AI using Deep Q-Learning (DQN)
+# Pong Game using Deep Q-Learning
 
-This project implements a Pong AI agent trained using Deep Q-Learning (DQN) in Python with PyTorch. The agent learns to play Pong against a human player by training on a simplified, pixel-free environment. The project supports both training and human vs AI gameplay using `pygame`.
+This project implements a reinforcement learning-based Pong AI agent trained using Deep Q-Learning (DQN) in Python with PyTorch. There's both training and human vs AI gameplay implemented here, using `pygame`.
 
 ## Features
-- **DQN agent** implemented with PyTorch
-- **Self-play training environment** (no images, uses game state features)
-- **Headless mode** for fast training
-- **Human vs AI gameplay** using `pygame`
-- **Model checkpointing** (automatic save/load)
-- **Simple, modular code** (single file)
-- **Reward shaping** for improved learning
+- DQN agent implemented with PyTorch
+- Self-play AI training environment
+- Human vs AI gameplay using `pygame`
+- Reward shaping for improved and efficient learning
 
 ## Requirements
 - Python 3.7+
@@ -22,26 +19,12 @@ This project implements a Pong AI agent trained using Deep Q-Learning (DQN) in P
 pip install torch numpy pygame
 ```
 
-## How It Works
-- The environment is a simplified Pong game (no graphics during training).
-- The AI controls the **right paddle**; the human controls the **left paddle**.
-- The AI is trained using a DQN with experience replay and a target network.
-- **Rewards:**
-  - `+1` if AI scores
-  - `-1` if player scores
-  - `+0.1` for AI hitting the ball
-  - `+0.01` small reward for good AI positioning
-
 ## Usage
 
 ### Training the AI
-If no saved model (`dqn_pong_model.pth`) is found, the script will train the agent from scratch:
+If no saved model (`dqn_pong_model.pth`) is found, the script will train the agent from scratch.
 
-```bash
-python "Pong RL Game.py"
-```
-
-- Training runs for 120,000 episodes by default (see `PRETRAIN_EPISODES` in the code).
+- Training runs for 120,000 episodes by default (refer to `PRETRAIN_EPISODES` in the code).
 - Progress is logged every 500 episodes.
 - The trained model is saved to `dqn_pong_model.pth`.
 
@@ -52,18 +35,18 @@ Once trained, the script will load the model and launch the game window for huma
   - Up Arrow – Move paddle up
   - Down Arrow – Move paddle down
 - The game runs at ~70 FPS.
-- The AI paddle is on the right; you (the human) are on the left.
+- The AI paddle is on the right; and the human (user) is on the left.
 
 ## Files Overview
-- `Pong RL Game.py`  — Main training and gameplay script
+- `Pong DQN Game.py`  — Main training and gameplay script
 - `dqn_pong_model.pth` — Saved PyTorch model (created after training)
 
 ## Saving & Loading
 - The agent automatically saves to `dqn_pong_model.pth` after training.
-- When restarting the script, it will load this file (if present) and start the game.
+- When restarting the script, it will load this file (if present in the same directory) and start the game.
 
 ## Customization
-- You can adjust training parameters (episodes, learning rate, etc.) at the top of `Pong RL Game.py`.
+- You may adjust the training parameters (episodes, FPS, learning rate, etc.) in the `Pong DQN Game.py` python script.
 - To retrain from scratch, delete `dqn_pong_model.pth` and rerun the script.
 
 ## Contributing
