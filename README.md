@@ -1,6 +1,6 @@
 # Pong Game using Deep Q-Learning
 
-This project implements a reinforcement learning-based Pong AI agent trained using Deep Q-Learning (DQN) in Python with PyTorch. There's both training and human vs AI gameplay implemented here, using `pygame`.
+This 'Pong Game' project implements a reinforcement learning-based Pong AI agent trained using Deep Q-Learning (DQN) in Python with PyTorch. There's both training and human vs AI gameplay implemented here, using `pygame`.
 
 ## Features
 - DQN agent implemented with PyTorch
@@ -47,7 +47,7 @@ Once trained, the script will load the model and launch the game window for huma
 
 ## Customization
 - You may adjust the training parameters (number of episodes, learning rate, etc.) in the `Pong DQN Game.py` python script.
-- To retrain from scratch, delete `dqn_pong_model.pth` and rerun the script.
+- To retrain from scratch, delete `dqn_pong_model.pth` and rerun the python script.
 
 ## Contributing
 
