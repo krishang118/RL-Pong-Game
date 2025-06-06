@@ -66,6 +66,10 @@ Once trained, the script will load the model and launch the game window for huma
 - You can adjust training parameters (episodes, learning rate, etc.) at the top of `Pong RL Game.py`.
 - To retrain from scratch, delete `dqn_pong_model.pth` and rerun the script.
 
+## Contributing
+
+Contributions are welcome!
+
 ## License
 
-MIT License. Feel free to use, modify, and share. 
+Distributed under the MIT License.  
