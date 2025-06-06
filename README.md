@@ -46,7 +46,7 @@ Once trained, the script will load the model and launch the game window for huma
 - When restarting the script, it will load this file (if present in the same directory) and start the game.
 
 ## Customization
-- You may adjust the training parameters (episodes, FPS, learning rate, etc.) in the `Pong DQN Game.py` python script.
+- You may adjust the training parameters (number of episodes, learning rate, etc.) in the `Pong DQN Game.py` python script.
 - To retrain from scratch, delete `dqn_pong_model.pth` and rerun the script.
 
 ## Contributing
