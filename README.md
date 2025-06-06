@@ -29,7 +29,7 @@ If no saved model (`dqn_pong_model.pth`) is found, the script will train the age
 - The trained model is saved to `dqn_pong_model.pth`.
 
 ### Playing Against the AI
-Once trained, the script will load the model and launch the game window for human vs AI play.
+Once trained, the script will load the model and launch the game window for human vs AI gameplay.
 
 - **Controls:**
   - Up Arrow – Move paddle up
