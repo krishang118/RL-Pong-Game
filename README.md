@@ -14,7 +14,7 @@ This 'Pong Game' project implements a reinforcement learning-based Pong AI agent
 - NumPy
 - pygame
 
-### Install dependencies
+Install the dependencies:
 ```bash
 pip install torch numpy pygame
 ```
